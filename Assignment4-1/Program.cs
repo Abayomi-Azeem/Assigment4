@@ -39,11 +39,7 @@
                            - A12 * A23 * A34 * A41 - A13 * A24 * A32 * A41 - A14 * A22 * A33 * A41
                            + A14 * A23 * A32 * A41 + A13 * A22 * A34 * A41 + A12 * A24 * A33 * A41;
             Console.WriteLine(detArray);
-            for (int i = 0; i < 4; i++)
-            {
-                det = det + (fourDimArray[0, i] * (fourDimArray[1, (i + 1) % 4] * fourDimArray[2, (i + 2) % 4] * fourDimArray[3, (i + 3) % 4] - fourDimArray[1, (i + 3) % 4] * fourDimArray[2, (i + 2) % 4] * fourDimArray[3, (i + 1) % 4]));
-                Console.Write("\nThe Determinant of the matrix is: {0}\n\n", det);
-            }
+            
         }
     }
                             
